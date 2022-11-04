@@ -12,7 +12,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_eco_gas_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.GastoViagem"
+        android:theme="@style/Theme.Splash"
         tools:targetApi="31">
         <activity
             android:name=".MainActivity"

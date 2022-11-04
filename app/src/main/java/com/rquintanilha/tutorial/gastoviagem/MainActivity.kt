@@ -22,11 +22,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE)
 
+        Thread.sleep(1000)
+        setTheme(R.style.Theme_GastoViagem)
+
 
         // val mTextView = findViewById<TextView>(R.id.text_link)
         //mTextView.movementMethod = LinkMovementMethod.getInstance()
 
-
+        //findViewById<TextView>(R.id.text_link)
 
         //
 
