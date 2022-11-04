@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE)
 
-        Thread.sleep(1000)
+        Thread.sleep(2000)
         setTheme(R.style.Theme_GastoViagem)
 
 
