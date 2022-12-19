@@ -17,7 +17,7 @@ import org.w3c.dom.Text
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
 
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: com.rquintanilha.tutorial.gastoviagem.databinding.ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE)
@@ -26,18 +26,18 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setTheme(R.style.Theme_GastoViagem)
 
 
-        // val mTextView = findViewById<TextView>(R.id.text_link)
-        //mTextView.movementMethod = LinkMovementMethod.getInstance()
-
-        //findViewById<TextView>(R.id.text_link)
-
-        //
-
-
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.buttonCalculate.setOnClickListener(this)
+
+        // iniciando link
+        val mTextView = binding.hylerLink
+
+        //buscando e abrindo link
+        mTextView.movementMethod = LinkMovementMethod.getInstance()
     }
+
+
 
     override fun onClick(view: View) {
         if (view.id == R.id.button_calculate) {
@@ -67,4 +67,5 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             Toast.makeText(this, R.string.validation_fill_all_fields, Toast.LENGTH_SHORT).show()
         }
     }
+
 }

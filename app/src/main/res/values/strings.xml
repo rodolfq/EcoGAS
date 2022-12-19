@@ -15,6 +15,9 @@
 
     <string name="txtCredits">Me encontre - <a href="https://www.linkedin.com/in/rodolfo-q/">Rodolfo Quintanilha</a></string>
 
+    <string name="hyperlink">Open <a href="https://www.geeksforgeeks.org">GeeksforGeeks portal</a></string>
+
+
 
 
 </resources>
